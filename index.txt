@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Examples</title>
+</head>
+<body>
+  <h1>This is Jana</h1>
+    <!-- Example 1: Selecting by ID -->
+    <div id="example1">This is an element with ID "example1"</div>
+
+    <!-- Example 2: Selecting by class -->
+    <p class="example2">This is a paragraph with class "example2"</p>
+
+    <!-- Example 3: Selecting by tag name -->
+    <span>This is a <strong>span</strong> element</span>
+
+    <!-- Example 4: Selecting by attribute -->
+    <a href="https://www.google.com" target="_blank" rel="noopener">Visit Google.com</a>
+
+    <script>
+        // Example 1: Selecting by ID
+        const elementById = document.getElementById('example1');
+        document.write(elementById.textContent);
+
+        // Example 2: Selecting by class
+        const elementsByClass = document.getElementsByClassName('example2');
+        document.write(elementsByClass[0].textContent);
+
+        // Example 3: Selecting by tag name
+        const elementsByTagName = document.getElementsByTagName('span');
+        document.write(elementsByTagName[0].textContent);
+
+        // Example 4: Selecting by attribute
+        const elementByAttribute = document.querySelector('a[target="_blank"]');
+        document.write(elementByAttribute.href);
+    </script>
+</body>
+</html>
